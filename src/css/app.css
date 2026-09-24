@@ -16,3 +16,54 @@
     transition-timing-function: linear !important;
     margin: 0 auto !important;
 }
+
+input[placeholder="Nama pegawai"],
+input[placeholder="NIP pegawai"],
+select {
+  background-color: #ffffff !important;
+}
+
+.dark input[placeholder="Nama pegawai"],
+.dark input[placeholder="NIP pegawai"],
+.dark select {
+  background-color: #0f172a !important;
+}
+
+thead.sticky {
+  z-index: 10;
+  background-color: #ffffff !important;
+}
+
+.dark thead.sticky {
+  background-color: #0f172a !important;
+}
+
+button[type="button"] > span:last-child.text-success {
+  color: #16a34a !important;
+}
+
+button[type="button"] > span:last-child.text-muted-foreground {
+  color: #dc2626 !important;
+}
+
+button[type="button"]:has(> span:last-child.text-success) > span:first-child,
+button[type="button"]:has(> span:last-child.text-success) > span:first-child span {
+  color: #16a34a !important;
+}
+
+button[type="button"]:has(> span:last-child.text-muted-foreground) > span:first-child,
+button[type="button"]:has(> span:last-child.text-muted-foreground) > span:first-child span {
+  color: #dc2626 !important;
+}
+
+input[placeholder="Ketik nama atau NIP..."] {
+  padding-left: 2.75rem !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='m20 20-4-4'/%3E%3C/svg%3E") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0.9rem center !important;
+  background-size: 1.2rem !important;
+}
+
+div:has(form input[placeholder="Ketik nama atau NIP..."]) + p {
+  display: none !important;
+}

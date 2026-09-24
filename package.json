@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "api": "node server/meal-db.mjs",
+    "dev:all": "concurrently \"npm run api\" \"npm run dev\"",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
@@ -75,6 +77,7 @@
     "@types/react-dom": "^19.1.9",
     "@types/react-syntax-highlighter": "^15.5.13",
     "@vitejs/plugin-react": "^5.0.2",
+    "concurrently": "^9.2.1",
     "eslint": "^9.36.0",
     "eslint-config-next": "latest",
     "eslint-plugin-react-hooks": "^6.1.1",
